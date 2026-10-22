@@ -241,7 +241,7 @@ function About() {
       <header className="section-header">
         <span className="section-badge">
           <CraftIcon name="scissors" />
-          竞赛规范 · 评委必查
+          竞赛规范
         </span>
         <h1 className="section-title" tabIndex="-1">
           关于作品与学术合规声明
