@@ -18,16 +18,6 @@ import {
   SUGAR_HISTORY_TIMELINE
 } from './data/sugarCouplets';
 
-/** 竞赛申报材料清单（用于关于页 Checklist） */
-/** 竞赛申报材料清单（用于关于页 Checklist） */
-const SUBMISSION_CHECKLIST = [
-  '作品介绍文档：项目背景、功能说明、技术路线、团队分工',
-  '演示视频：建议前 15 秒直奔「石板画糖」与「一口气吹糖」两个高光操作',
-  '原创性与知识产权声明：本页第四、五节即为内容底稿',
-  '人工智能工具使用情况说明：本页第三节，需补齐具体工具名称',
-  '条漫与影片的版权与肖像合规确认（角色为团队原创设计）',
-  '团队成员、学校、指导教师信息（本页第七节，提交前必填）'
-];
 
 /**
  * 【B-8】糖的来路（卷轴式时间轴）
@@ -388,6 +378,8 @@ function About() {
         </ul>
       </section>
 
+      <PatternDivider variant="fret" />
+
       <section className="studio-game-block">
         <h2 className="serif-title" style={{ fontSize: '1.35rem', marginBottom: '12px' }}>
           五、地域题材与非遗名录考据边界
@@ -400,30 +392,6 @@ function About() {
         </p>
       </section>
 
-      <PatternDivider variant="fret" />
-
-      <section className="studio-game-block">
-        <h2 className="serif-title" style={{ fontSize: '1.35rem', marginBottom: '12px' }}>
-          六、基本申报材料 Checklist
-        </h2>
-        <ul className="about-checklist">
-          {SUBMISSION_CHECKLIST.map((item) => (
-            <li key={item}>{item}</li>
-          ))}
-        </ul>
-      </section>
-
-      <section className="studio-game-block">
-        <h2 className="serif-title" style={{ fontSize: '1.35rem', marginBottom: '12px' }}>
-          七、团队信息
-        </h2>
-        <ul className="about-checklist">
-          <li><strong>团队名称：</strong>待填写</li>
-          <li><strong>团队成员：</strong>待填写</li>
-          <li><strong>所在学校 / 院系：</strong>待填写</li>
-          <li><strong>指导教师：</strong>待填写</li>
-        </ul>
-      </section>
     </main>
   );
 }

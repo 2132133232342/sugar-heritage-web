@@ -49,6 +49,17 @@ let out = html
   .replace(/<link[^>]*rel="stylesheet"[^>]*>/i, '')
   .replace(/<link[^>]*href="[^"]*\.css"[^>]*>/i, '');
 
+// favicon 位于 dist 根目录，不在 comic/videos 子目录里，因此不会被下面的资源表收录；
+// 单文件版里 ./favicon.svg 会 ERR_FILE_NOT_FOUND —— 这里直接内联成 data URI。
+const faviconPath = join(distDir, 'favicon.svg');
+if (existsSync(faviconPath)) {
+  const faviconData = `data:image/svg+xml;base64,${readFileSync(faviconPath).toString('base64')}`;
+  out = out.replace(
+    /(<link[^>]*rel="(?:icon|apple-touch-icon)"[^>]*href=")[^"]*(")/gi,
+    `$1${faviconData}$2`
+  );
+}
+
 // ---------------------------------------------------------------------------
 // 单文件环境标识（放进 <head>，确保组件在任何渲染之前就能读到）
 // ---------------------------------------------------------------------------
