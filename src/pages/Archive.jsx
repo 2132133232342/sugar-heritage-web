@@ -562,7 +562,8 @@ export default function Archive({ chinaGeoJson }) {
                   </div>
                 `;
             }
-            return `<span style="color:#7A5832;">${params.name}（待收录流派）</span>`;
+            // 未收录省份只显示地名：不写「待收录」，避免在成品里留下未完成的暗示
+            return `<span style="color:#7A5832;">${params.name}</span>`;
           }
         },
         series: [

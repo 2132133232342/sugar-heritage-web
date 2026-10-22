@@ -349,13 +349,8 @@ function About() {
             配音为 AIGC 语音合成，最终由团队完成人工剪辑、字幕校对与转码压制。
           </li>
         </ul>
-        <p className="section-subtitle" style={{ marginTop: '10px' }}>
-          <strong>③ 具体工具名称：</strong>
-          <em>【提交前必填：图像生成工具 / 图生视频工具 / 语音合成工具 / 剪辑软件】</em>
-          —— 请团队按实际使用情况补齐，未使用的环节直接删除。
-        </p>
         <p className="section-subtitle">
-          <strong>④ 人工干预说明：</strong>
+          <strong>③ 人工干预说明：</strong>
           所有 AIGC 产出均经人工审阅与再加工，未直接采用原始生成结果；
           角色的身份设定、故事走向与全部文字内容由团队决定，AIGC 仅承担视觉素材生成。
         </p>
