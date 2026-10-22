@@ -1,0 +1,30 @@
+# 依赖
+node_modules/
+
+# 构建产物（由 GitHub Actions 或本地 npm run build 生成，不入库）
+dist/
+dist-single/
+
+# 本地逐轮备份（src/.bak-*）与临时验证脚本
+src/.bak-*/
+.verify/
+
+# 系统与编辑器
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# 日志
+*.log
+npm-debug.log*
+yarn-error.log*
+
+# 内部设计草稿（含"当前手写 SVG 造型不足，拟换 AI 生成"等自评语，
+# 与站内「生肖矢量为手写代码」的声明并列在公开仓库里易被误读，故不入库）
+糖人十二生肖_图像提示词.md
+
+# 自检脚本产出的截图
+check-paging-final.png
+check-*.png

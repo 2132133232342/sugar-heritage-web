@@ -1,0 +1,22 @@
+{
+  "name": "sugar-heritage-web",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "一勺糖稀·非遗百年 —— 全国大学生数字媒体科技作品及创意竞赛（民族文化·创新表达）",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "echarts": "^5.5.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^5.4.11"
+  }
+}
