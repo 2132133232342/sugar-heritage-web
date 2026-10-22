@@ -58,7 +58,7 @@ function SugarHistoryScrollTimeline({ scrollProgress = 0 }) {
             糖的来路 · 千年饧艺卷轴时间线
           </h2>
           <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>
-            （支持键盘 Tab 与方向键逐签查阅 · 每条均注明可考来源或标注团队拟）
+            （支持键盘 Tab 与方向键逐签查阅 · 每条均注明可考来源或标注团队原创）
           </span>
         </div>
       </div>
@@ -283,7 +283,7 @@ function About() {
               <tr>
                 <td style={{ fontWeight: 600 }}>今日糖签、长卷叫卖、遗憾博物馆</td>
                 <td>传统手艺人行话整理 + 团队文学化创作</td>
-                <td>凡属文学化凝练的对联与口诀，逐条显式标注「（团队拟）」</td>
+                <td>对联、口诀、叫卖与影片台词均为团队原创撰写，不冒用民间旧说</td>
               </tr>
               <tr>
                 <td style={{ fontWeight: 600 }}>番外条漫《盛京糖韵 · 游古都》</td>
@@ -296,7 +296,7 @@ function About() {
               <tr>
                 <td style={{ fontWeight: 600 }}>纪录短片《盛京寻甜记》</td>
                 <td>同一剧本的文字分镜 + AIGC 辅助生成</td>
-                <td>片长 1 分 21 秒（81.3 秒）；五幕解说逐条标注「（团队拟）」</td>
+                <td>片长 1 分 21 秒（81.3 秒）；五幕解说为团队原创撰写</td>
               </tr>
             </tbody>
           </table>
@@ -403,7 +403,7 @@ export function SiteFooter() {
             一勺糖稀 · 非遗百年 —— 民族文化创新表达数字交互作品
           </strong>
           <span>
-            史料与口诀准则：出处可考即注明文献 · 地域差异如实说明 · 文学化口诀标注（团队拟）
+            史料与口诀准则：出处可考即注明文献 · 地域差异如实说明 · 文学化口诀标明为团队原创
           </span>
           <span>
             开源许可：全站采用 SIL OFL 1.1 开源思源宋体/黑体，手写原生 SVG 与 Canvas 代码，零外链依赖。

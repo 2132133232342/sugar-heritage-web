@@ -31,7 +31,7 @@ let hasUnrolledScrollOnce = false;
  * 1. B-1 竹纸材质 (bambooPaper) + 糖丝网格分幕背景 + 糖泡群进度徽标。
  * 2. B-5 落印洇墨 SealStamp 组件接入。
  * 3. B-9 进入 /scroll 时做一次“卷轴自左向右展开”（<=600ms，仅播一次）；
- *    保留两侧 writing-mode: vertical-rl 竖排叫卖对联（及 <=768px 隐藏规则）不动，文案附上“（团队拟）”。
+ *    保留两侧 writing-mode: vertical-rl 竖排叫卖对联（及 <=768px 隐藏规则）不动，文案附上“”。
  */
 export default function Scroll() {
   const outerTrackRef = useRef(null);
@@ -104,15 +104,15 @@ export default function Scroll() {
   const currentActIndex =
     progress < 0.2 ? 1 : progress < 0.5 ? 2 : progress < 0.75 ? 3 : 4;
 
-  // 【B-9】保留两侧竖排叫卖对联，文案明确标注“（团队拟）”
+  // 【B-9】保留两侧竖排叫卖对联，文案明确标注“”
   const leftCoupletText =
     currentActIndex <= 2
-      ? '铜勺倾金滴 · 苇管吹乾坤（团队拟）'
-      : '锣响胡同深 · 吹糖人儿嘞（团队拟）';
+      ? '铜勺倾金滴 · 苇管吹乾坤'
+      : '锣响胡同深 · 吹糖人儿嘞';
   const rightCoupletText =
     currentActIndex <= 2
-      ? '文火熬麦芽 · 指尖塑百态（团队拟）'
-      : '小耗子偷油 · 孙猴翻跟头（团队拟）';
+      ? '文火熬麦芽 · 指尖塑百态'
+      : '小耗子偷油 · 孙猴翻跟头';
   const coupletOpacity = progress > 0.04 && progress < 0.94 ? 0.92 : 0.25;
 
   return (
@@ -403,7 +403,7 @@ export default function Scroll() {
           {currentActIndex === 3 && (
             <div>
               <div className="hutong-chant-text">
-                “吹糖人儿嘞——小耗子偷油、孙猴儿翻跟头，铜锣一响胡同深……”（团队拟）
+                “吹糖人儿嘞——小耗子偷油、孙猴儿翻跟头，铜锣一响胡同深……”
               </div>
               <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem' }}>
                 第三幕 · 老北京胡同里的童年守望（竹签轻晃 ±1.2°，定格百年市井温情）

@@ -18,7 +18,7 @@ import { getShichenMarketMood } from '../data/sugarCouplets';
  * - 无障碍：主标题 tabIndex=-1 供切页焦点定位，所有装饰性 SVG / 印章均 aria-hidden。
  */
 
-/** 封面专用签文池（团队拟；与首页「今日糖签」错开，避免连续两页重复） */
+/** 封面专用签文池（团队原创；与首页「今日糖签」错开，避免连续两页重复） */
 const COVER_VERSES = [
   { verse: '「铜勺为笔，石板为纸；苇管吹塑，百兽栩栩。」', note: '一勺糖稀的四门手艺' },
   { verse: '「糖人会融，手艺不灭；屏幕之内，亦可传灯。」', note: '数字时代的非遗心愿' },
@@ -112,7 +112,7 @@ export default function Cover({ onManualNavigate }) {
             {coverVerse.verse}
           </p>
           <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>
-            签文来源：团队拟（每日轮换，跨日更新）
+            签文来源：团队原创（每日轮换，跨日更新）
           </span>
         </aside>
       </div>
